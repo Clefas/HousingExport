@@ -24,7 +24,7 @@ function CreateTables()
     end)
 	Wait(1000)
 	MySQL.Async.execute('ALTER TABLE houselocations MODIFY COLUMN tier TEXT', {}, function(rowsChanged)
-		print('La columna tier de la tabla houselocations se ha cambiado a tipo TEXT')
+		print('The tier column of the houselocations table has been changed to type TEXT')
 	end)
     Wait(1000)
     print('Tables updated...')
@@ -38,7 +38,7 @@ function updateNumberTier(numberTier, name, new_hash)
         if rowsAffected > 0 then
             print('Nombre :'..name..' | Tier :'..numberTier..' | Nuevo Hash :'..new_hash..'')
         else
-            print('No se encontró ningún nivel con el nombre '..name)
+            print('No tier with name found '..numberTier)
         end
     end)
 end
