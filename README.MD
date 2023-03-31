@@ -9,3 +9,9 @@
 4.- go to console and execute the command "exporthouses" 
 
 5.- Done :)
+
+
+IF YOU USE QS-INVENTORY or QB-INVENTORY You can export the OLD inventorys to new syntax
+
+use the command `migrateQS` for qs-inventory 
+use the command `migrateQB` for qb-inventory 
