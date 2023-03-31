@@ -3,7 +3,7 @@ RegisterCommand('exporthouses', function()
 	print('Checking tables...')
 	CreateTables()
 	Wait(5000)
-    if not Config.AddonsInterior then goto skip end
+    if not Config.AddonsInteriors then goto skip end
     for k,v in ipairs(Config.AddonsInteriors) do
         local numberTier = v.numberTier
         local nameTier = v.nameTier
